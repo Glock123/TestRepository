@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToppingsActivity">
+
+    <CheckBox
+        android:id="@+id/chocolate_syrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chocolate_syrup"
+        android:textSize="20sp"
+        android:onClick="onSelection"/>
+
+    <CheckBox
+        android:id="@+id/sprinkles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sprinkles"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:onClick="onSelection"/>
+
+    <CheckBox
+        android:id="@+id/crushed_nuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crushed_nuts"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:onClick="onSelection"/>
+
+    <CheckBox
+        android:id="@+id/cherries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cherries"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:onClick="onSelection"/>
+
+    <CheckBox
+        android:id="@+id/orio_cookie_crumbles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orio_cookie_crumbles"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:onClick="onSelection"/>
+
+    <Button
+        android:id="@+id/to_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/to_customer"
+        android:onClick="onCustomer"/>
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#613535"
+    android:orientation="vertical"
+    tools:context=".CustomerDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sweet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/order_hint"
+                android:textColor="#D32525"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="#DC7373"
+                    android:text="@string/name"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:hint="@string/name_hint"
+                    android:textColor="#D32525"
+                    android:inputType="textMultiLine|textCapSentences" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="#DC7373"
+                    android:text="@string/address"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:textColor="#D32525"
+                    android:hint="@string/address_hint"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#DC7373"
+                    android:text="@string/phone"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phoneNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#D32525"
+                    android:hint="@string/phone_hint"
+                    android:imeOptions="actionSend"
+                    android:inputType="phone" />
+
+                <Spinner
+                    android:id="@+id/type_of_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/cyan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="#DC7373"
+                    android:paddingBottom="10dp"
+                    android:text="@string/note"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="@string/note_hint"
+                    android:textColor="#D32525"
+                    android:inputType="textMultiLine|textCapSentences" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/show_toppings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/show_toppings"
+                android:layout_marginTop="30dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/topping_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8CFCF"
+                android:onClick="onToppingButton"
+                android:shadowColor="#4C0C0C"
+                android:text="@string/topping_button"
+                android:layout_marginRight="60dp"
+                android:textColorHint="#EC0B0B" />
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DC7373"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="@string/select_delivery_option"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/same_day_delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/same_day_delivery"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onSelectDeliveryOption" />
+
+                    <RadioButton
+                        android:id="@+id/next_day_delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/next_day_delivery"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:checked="true"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onSelectDeliveryOption" />
+
+                    <RadioButton
+                        android:id="@+id/pickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pickup"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onSelectDeliveryOption" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

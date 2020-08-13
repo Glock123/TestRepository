@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82F87E"
+    android:orientation="vertical"
+    tools:context=".DesertActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/heading_desert"
+        android:textColor="#1E4505"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F1D9D9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+                <TextView
+                    android:id="@+id/donut"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:onClick="onSweet"
+                    android:background="#E88181"
+                    android:drawableLeft="@drawable/donut"
+                    android:gravity="center"
+                    android:text="@string/donut_desc"
+                    android:textColor="#E81515"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/ice_cream"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#E88181"
+                    android:drawableLeft="@drawable/icecream"
+                    android:gravity="center"
+                    android:text="@string/ice_cream_desc"
+                    android:textColor="#E81515"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onSweet"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/froyo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#E88181"
+                    android:drawableLeft="@drawable/froyo"
+                    android:gravity="center"
+                    android:text="@string/froyo_desc"
+                    android:textColor="#E81515"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onSweet"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/gulab_jamun"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#E88181"
+                    android:drawableLeft="@drawable/gulabjamun"
+                    android:gravity="center"
+                    android:text="@string/gulab_jamun_desc"
+                    android:textColor="#E81515"
+                    android:onClick="onSweet"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/jalebi"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#E88181"
+                    android:drawableLeft="@drawable/jalebi"
+                    android:gravity="center"
+                    android:text="@string/jalebi_desc"
+                    android:onClick="onSweet"
+                    android:textColor="#E81515"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/boondi_laddu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#E88181"
+                    android:drawableLeft="@drawable/boondiladdu"
+                    android:gravity="center"
+                    android:text="@string/boondi_laddu_desc"
+                    android:onClick="onSweet"
+                    android:textColor="#E81515"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to_main_activity"
+                    android:onClick="toMainActivity"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Data Mover</string>
+    <string name="first_activity_text">First Activity (nothing fancy)</string>
+    <string name="onSecondActivity">Go to Second Activity</string>
+    <string name="second_activity_text">Second Activity (bit fancier)</string>
+    <string name="to_detailed_activity">To Detailed Activity</string>
+    <string name="to_first_activity">To First Activity</string>
+    <string name="hint">Message for Detailed\nActivity(Editable)</string>
+    <string name="hint2">Message from Detailed\nActivity</string>
+    <string name="no_message">No message from Detailed Activity sadly</string>
+    <string name="detailed_activity_text">Detailed Activity</string>
+    <string-array name="actions">
+        <item>Do Nothing</item>
+        <item>Do Something</item>
+        <item>Let\'s go</item>
+        <item>I got Supplies</item>
+        <item>Enemies Ahead</item>
+        <item>Mark the Location</item>
+        <item>Thank you</item>
+        <item>Flank Right</item>
+        <item>Flank Left</item>
+        <item>Leave the air drop</item>
+        <item>Get the air drop</item>
+        <item>Not a problem!</item>
+        <item>Fall back to Safe Zone</item>
+        <item>Search for Vehicles</item>
+        <item>RESULT NOT OK</item>
+    </string-array>
+    <string name="return_text">Return Text</string>
+    <string name="change_color">Change Color of Text</string>
+    <string name="order_desert">To order desert,\nClick Here</string>
+    <string name="heading_desert">Yummy Deserts\nClick Any to Select</string>
+    <string name="donut_desc"><b>Donuts</b> are glazed and\nsprinkled with candy.</string>
+    <string name="ice_cream_desc">A simple Softy, to make your\nruined day glooming!!</string>
+    <string name="froyo_desc"><b>FroYo</b> is a premium self-serve frozen yogurt.</string>
+    <string name="gulab_jamun_desc">My favourite :-)\nMust Try</string>
+    <string name="jalebi_desc">Probably the only liquid\nthat turns solid on\nheating xD</string>
+    <string name="boondi_laddu_desc">A must in all festivals!</string>
+    <string name="to_main_activity">Nah I don\'t like any,\nTake me back</string>
+    <string name="order_hint">Your Selected Order</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Enter your name here</string>
+    <string name="address">Address</string>
+    <string name="address_hint">Enter your address here</string>
+    <string name="phone">Phone Number</string>
+    <string name="phone_hint">Enter phone number\nhere</string>
+    <string name="note">Note\n(if any)</string>
+    <string name="note_hint">Enter note here</string>
+    <string name="select_delivery_option">Select the delivery Option: </string>
+    <string name="same_day_delivery">Same day SUPER FAST delivery\n(Extra charges)</string>
+    <string name="next_day_delivery">Next day Standard delivery</string>
+    <string name="pickup">Pickup from store</string>
+    <string-array name="type_of_phone">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+    <string name="topping_button">Add Some Toppings(Optional)</string>
+    <string name="show_toppings">No toppings selected...</string>
+    <string name="chocolate_syrup">Chocolate Syrup</string>
+    <string name="sprinkles">Sprinkles</string>
+    <string name="crushed_nuts">Crushed Nuts</string>
+    <string name="cherries">Cherries</string>
+    <string name="orio_cookie_crumbles">Orio Cookie Crumbles</string>
+    <string name="to_customer">Back</string>
+</resources>
